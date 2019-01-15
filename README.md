@@ -1,4 +1,4 @@
-# Fltter/Dart Tips
+# Flutter/Dart Tips
 
 ### 1. Using `null-aware operators`
 While checking the null in the Dart, Use `null-aware operators` help you reduce the amount of code required to work with references that are potentially null.

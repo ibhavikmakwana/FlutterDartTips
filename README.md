@@ -1,5 +1,11 @@
 # Flutter/Dart Tips
 
+### 3. Do not explicitly initialize variables to `null`.
+
+Adding `= null` is redundant and unneeded.
+
+<img src="./tips/avoid_init_null.png" height="250" alt="Screenshot"/>
+
 ### 2. Using `ListView.separated()`
 Want to add the separator in your Flutter ListView?
 

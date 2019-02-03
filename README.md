@@ -1,5 +1,12 @@
 # Flutter/Dart Tips
 
+## Monthly Tip Article
+
+This article contains the Tips that I have wirtten over here.
+
+[#1 Flutter + Dart Tips](https://medium.com/flutter-community/1-flutter-dart-tips-830854c3a418)
+
+
 ### 3. Do not explicitly initialize variables to `null`.
 
 Adding `= null` is redundant and unneeded.

@@ -1,5 +1,12 @@
 # Flutter/Dart Tips
 
+
+### 4. Apply style as a Theme in a `Text` widget.
+Check out below article for detail information about this tip.
+[Apply style as a Theme in a `Text` widget](https://medium.com/flutter-community/flutter-apply-style-as-a-theme-in-a-text-widget-90268328bd23)
+
+<img src="./tips/text_theme.png" height="250" alt="Screenshot"/>
+
 ## Monthly Tip Article
 
 This article contains the Tips that I have wirtten over here.

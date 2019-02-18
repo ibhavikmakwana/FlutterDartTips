@@ -1,5 +1,13 @@
 # Flutter/Dart Tips
 
+### 5. Want to run task periodically in Dart?
+
+What about using `Timer.periodic`
+It will create a repeating timer, It will take a two argument one is `duration` and second is `callback` that must take a one Timer parameter.
+
+<img src="./tips/timer.png" height="250" alt="Screenshot"/>
+
+You can cancle the timer using the `timer.cancel()`.
 
 ### 4. Apply style as a Theme in a `Text` widget.
 Check out below article for detail information about this tip.

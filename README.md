@@ -1,5 +1,15 @@
 # Flutter/Dart Tips
 
+### 6. Use Ternary operator instead of the if else to shorter your Dart code.
+
+Use below.
+
+<img src="./tips/ternary.png" height="250" alt="Screenshot"/>
+
+Instead of this.
+
+<img src="./tips/if_else.png" height="250" alt="Screenshot"/>
+
 ### 5. Want to run task periodically in Dart?
 
 What about using `Timer.periodic`

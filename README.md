@@ -1,5 +1,11 @@
 # Flutter/Dart Tips
 
+### 7. Want to set different Theme for a perticular widget ?
+
+Just wrap the widget with the `Theme` Widget and pass the `ThemeData()`.
+
+<img src="./tips/ThemeWidgetExample.png" height="550" alt="Screenshot"/>
+
 ### 6. Use Ternary operator instead of the if else to shorter your Dart code.
 
 Use below.

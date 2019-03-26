@@ -1,4 +1,14 @@
 # Flutter/Dart Tips
+### 8. Want to Add several cursor to your editor ?
+
+Android studio / intelliJ
+Press and hold `ctrl` two times and then press the arrow keys.
+Or use `alt` instead of the `ctrl`.
+
+VS Code
+While holding alt key tap wherever you want to create another cursor
+
+<img src="./tips/ThemeWidgetExample.png" height="550" alt="Screenshot"/>
 
 ### 7. Want to set different Theme for a perticular widget ?
 

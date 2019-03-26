@@ -6,6 +6,12 @@ Just wrap the widget with the `Theme` Widget and pass the `ThemeData()`.
 
 <img src="./tips/ThemeWidgetExample.png" height="550" alt="Screenshot"/>
 
+## Monthly Tip Article (February 2019)
+
+This article contains the Tips from February month that shared over here.
+
+[#2 Flutter + Dart Tips](https://medium.com/flutter-community/2-flutter-dart-tips-f149ffe83381)
+
 ### 6. Use Ternary operator instead of the if else to shorter your Dart code.
 
 Use below.
@@ -31,9 +37,9 @@ Check out below article for detail information about this tip.
 
 <img src="./tips/text_theme.png" height="250" alt="Screenshot"/>
 
-## Monthly Tip Article
+## Monthly Tip Article (January 2019)
 
-This article contains the Tips that I have wirtten over here.
+This article contains the Tips from January month that shared over here.
 
 [#1 Flutter + Dart Tips](https://medium.com/flutter-community/1-flutter-dart-tips-830854c3a418)
 

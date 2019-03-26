@@ -2,13 +2,13 @@
 ### 8. Want to Add several cursor to your editor ?
 
 Android studio / intelliJ
-Press and hold `ctrl` two times and then press the arrow keys.
-Or use `alt` instead of the `ctrl`.
+While holding `ctrl` `alt` keys tap wherever you want to create another cursor
+<img src="./tips/MultiCursorAndroidStudio.gif" height="450" alt="Screenshot"/>
 
 VS Code
-While holding alt key tap wherever you want to create another cursor
+While holding `alt` key tap wherever you want to create another cursor
 
-<img src="./tips/ThemeWidgetExample.png" height="550" alt="Screenshot"/>
+<img src="./tips/MultiCursorVSCode.gif" height="450" alt="Screenshot"/>
 
 ### 7. Want to set different Theme for a perticular widget ?
 

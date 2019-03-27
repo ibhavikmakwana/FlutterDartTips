@@ -1,5 +1,12 @@
 # Flutter/Dart Tips
 
+### 8. Cascade Notation - Method Chaining on Steroids :pill::syringe:
+`Cascades Notation (..)` allows to chain a sequence of operations on same object. In addition, fields (data-memebers) can be accessed using the same.
+
+[Open in DartPad :dart:](https://dartpad.dartlang.org/a93316aa779a2e0dd1993ae9a3464731)
+
+<img src="./tips/cascade_notation.png" width=600 alt="Screenshot">
+
 ### 7. Want to set different Theme for a perticular widget ?
 
 Just wrap the widget with the `Theme` Widget and pass the `ThemeData()`.

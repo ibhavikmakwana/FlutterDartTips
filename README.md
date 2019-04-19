@@ -8,7 +8,7 @@ To avoid this, you can use `debugPrint()`.
 
 You can also log your print calls to disk if your doing long-term or background work.
 
-Check out this [Gist](https://gist.github.com/slightfoot/1770dec7967def3b4d021bba8d814817) by Simon Lightfoot(https://github.com/slightfoot)
+Check out this [Gist](https://gist.github.com/slightfoot/1770dec7967def3b4d021bba8d814817) by [Simon Lightfoot](https://github.com/slightfoot)
 
 ### 8. Cascade Notation - Method Chaining on Steroids :pill::syringe:
 `Cascades Notation (..)` allows to chain a sequence of operations on same object. In addition, fields (data-memebers) can be accessed using the same.

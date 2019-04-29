@@ -1,5 +1,15 @@
 # Flutter/Dart Tips
 
+
+### 10. Having trouble displaying splashes using an InkWell?
+Use an Ink widget! The Ink widget draws on the same widget that InkWell does, so the splash appears.
+#FlutterFriday tweet by [Flutter.dev](https://twitter.com/FlutterDev/status/1121874600361693189?s=20).
+
+Learn more [here](https://goo.gl/4cx2Kn).
+
+<img src="./tips/inkwell.jpeg" height="300" alt="Screenshot"/>
+
+
 ### 9. Want to log data on the system console in Flutter?
 
 You can use the `print()` function to view it in the system console.

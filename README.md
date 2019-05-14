@@ -1,3 +1,46 @@
+### 11. Using Plurals in your Dart String.
+
+**Plurals:** Different languages have different rules for grammatical agreement with quantity. In English, for example, the quantity 1 is a special case. We write "1 book", but for any other quantity we'd write "n books". This distinction between singular and plural is very common, but other languages make finer distinctions.
+
+You can use Plurals in your Dart string by using [`Intl`](https://pub.dev/packages/intl) package. The full set supported by `Intl` package is zero, one, two, few, many, and other.
+
+- Add dependency:
+
+```Dart
+dependencies:
+  intl: version
+```
+
+- How to use:
+
+```dart
+import 'package:intl/intl.dart';
+...
+notificationCount(int howMany) => Intl.plural(
+      howMany,
+      zero: 'You don\'t have any notification.',
+      one: 'You have $howMany notification.',
+      other: 'You have $howMany notifications.',
+      name: "notification",
+      args: [howMany],
+      examples: const {'howMany': 42},
+      desc: "How many notifications are there.",
+    );
+
+    print(notificationCount(0));
+    print(notificationCount(1));
+    print(notificationCount(2));
+    
+```
+
+- Output:
+
+```Outout
+You don't have any notification.
+You have 1 notification.
+There are 2 notifications.
+```
+
 ### 10. Having trouble displaying splashes using an InkWell?
 Use an Ink widget! The Ink widget draws on the same widget that InkWell does, so the splash appears.
 #FlutterFriday tweet by [Flutter.dev](https://twitter.com/FlutterDev/status/1121874600361693189?s=20).

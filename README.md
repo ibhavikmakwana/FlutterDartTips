@@ -1,3 +1,12 @@
+### 12. Implement `assert()` messages in Dart.
+
+Do you know that you can throw your own message when your `assert` fails?
+`assert()` takes an optional message in which you can pass your message.
+
+```Dart
+assert(title != null, "Title string cannot be null.");
+```
+
 ### 11. Using Plurals in your Dart String.
 
 **Plurals:** Different languages have different rules for grammatical agreement with quantity. In English, for example, the quantity 1 is a special case. We write "1 book", but for any other quantity we'd write "n books". This distinction between singular and plural is very common, but other languages make finer distinctions.

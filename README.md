@@ -1,3 +1,14 @@
+### 13. Prefer single quotes for strings
+Use double quotes for nested strings or (optionally) for strings that contain single quotes. For all other strings, use single quotes.
+
+```Dart
+final String name = 'Flutter And Dart Tips';
+
+print('Hello ${name.split(" ")[0]}');
+print('Hello ${name.split(" ")[2]}');
+
+```
+
 ### 12. Implement `assert()` messages in Dart.
 
 Do you know that you can throw your own message when your `assert` fails?

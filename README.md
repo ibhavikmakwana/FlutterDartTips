@@ -1,3 +1,31 @@
+### 14. Set background image to your Container.
+
+Want to set the background image to your Container? And you are using a Stack to do so?
+There is a better way achieve this result.
+You can use decoration to set the image in the container.
+
+```Dart
+Container(
+  width: double.maxFinite,
+  height: double.maxFinite,
+  decoration: BoxDecoration(
+    image: DecorationImage(
+      image: NetworkImage('https://bit.ly/2oqNqj9'),
+    ),
+  ),
+  child: Center(
+    child: Text(
+      'Flutter.dev',
+      style: TextStyle(color: Colors.red),
+    ),
+  ),
+),
+
+```
+
+You provide Image according to your need. also you can use the boxdecoration properties to this image ti
+
+
 ### 13. Prefer single quotes for strings
 Use double quotes for nested strings or (optionally) for strings that contain single quotes. For all other strings, use single quotes.
 

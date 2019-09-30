@@ -23,7 +23,7 @@ Container(
 
 ```
 
-You provide Image according to your need. also you can use the boxdecoration properties to this image ti
+You can provide Image according to your need, also you can use the box decoration properties to provide a shape and border.
 
 
 ### 13. Prefer single quotes for strings

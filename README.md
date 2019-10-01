@@ -1,6 +1,5 @@
 ### 14. Check if debug mode or not
-You can use `assert()` method to check if the code is running in debugg mode or not. 
-`assert()` method only excecute in debugg mode.
+You can use `assert()` method to check if the code is running in debug mode or not. `assert()` method only execute in debug mode.
 
 ```Dart
 bool isDebugMode = false;

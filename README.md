@@ -1,3 +1,20 @@
+### 14. Check if debug mode or not
+You can use `assert()` method to check if the code is running in debugg mode or not. 
+`assert()` method only excecute in debugg mode.
+
+```Dart
+bool isDebugMode = false;
+
+assert(isDebugMode = true);
+
+// Or you can do like this
+assert((){
+  isDebugMode = true
+}());
+
+print('Is Debug Mode: $isDebugMode');
+```
+
 ### 13. Prefer single quotes for strings
 Use double quotes for nested strings or (optionally) for strings that contain single quotes. For all other strings, use single quotes.
 

@@ -5,6 +5,8 @@ You can use `kReleaseMode` constant to check if the code is running in release m
 More specifically, this is a constant that is true if the application was compiled in Dart with the '-Ddart.vm.product=true' flag. (from https://api.flutter.dev/flutter/foundation/kReleaseMode-constant.html)
 
 ```Dart
+import 'package:flutter/foundation.dart';
+
 print('Is Release Mode: $kReleaseMode');
 ```
 

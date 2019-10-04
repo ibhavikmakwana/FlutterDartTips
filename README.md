@@ -1,17 +1,11 @@
-### 15. Check if debug mode or not
-You can use `assert()` method to check if the code is running in debug mode or not. `assert()` method only execute in debug mode.
+### 15. Check if release mode or not
+You can use `kReleaseMode` constant to check if the code is running in release mode or not.
+`kReleaseMode` is a top level constant from `foundation.dart`. 
+
+More specifically, this is a constant that is true if the application was compiled in Dart with the '-Ddart.vm.product=true' flag. (from https://api.flutter.dev/flutter/foundation/kReleaseMode-constant.html)
 
 ```Dart
-bool isDebugMode = false;
-
-assert(isDebugMode = true);
-
-// Or you can do like this
-assert((){
-  isDebugMode = true
-}());
-
-print('Is Debug Mode: $isDebugMode');
+print('Is Release Mode: $kReleaseMode');
 ```
 
 ### 14. Set background image to your Container.

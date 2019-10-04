@@ -1,4 +1,4 @@
-### 14. Check if debug mode or not
+### 15. Check if debug mode or not
 You can use `assert()` method to check if the code is running in debug mode or not. `assert()` method only execute in debug mode.
 
 ```Dart
@@ -13,6 +13,33 @@ assert((){
 
 print('Is Debug Mode: $isDebugMode');
 ```
+
+### 14. Set background image to your Container.
+
+Want to set the background image to your Container? And you are using a Stack to do so?
+There is a better way achieve this result.
+You can use decoration to set the image in the container.
+
+```Dart
+Container(
+  width: double.maxFinite,
+  height: double.maxFinite,
+  decoration: BoxDecoration(
+    image: DecorationImage(
+      image: NetworkImage('https://bit.ly/2oqNqj9'),
+    ),
+  ),
+  child: Center(
+    child: Text(
+      'Flutter.dev',
+      style: TextStyle(color: Colors.red),
+    ),
+  ),
+),
+
+```
+
+You can provide Image according to your need, also you can use the box decoration properties to provide a shape and border.
 
 ### 13. Prefer single quotes for strings
 Use double quotes for nested strings or (optionally) for strings that contain single quotes. For all other strings, use single quotes.

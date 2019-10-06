@@ -95,7 +95,23 @@ Use an Ink widget! The Ink widget draws on the same widget that InkWell does, so
 
 Learn more [here](https://goo.gl/4cx2Kn).
 
-<img src="./tips/inkwell.jpeg" height="300" alt="Screenshot"/>
+```dart
+class InkWellCard extends StatelessWidget {
+  Widget build(BuildContext context) {
+    return Card(
+      elevation: 3.0,
+      child: Ink(
+        child: InkWell(
+          child: Center(
+            child: Text("Order Bagels"),
+          ),
+          onTap: () => print("Ordering.."),
+        ),
+      ),
+    );
+  }
+}
+```
 
 
 ### 9. Want to log data on the system console in Flutter?
@@ -113,13 +129,64 @@ Check out this [Gist](https://gist.github.com/slightfoot/1770dec7967def3b4d021bb
 
 [Open in DartPad :dart:](https://dartpad.dartlang.org/a93316aa779a2e0dd1993ae9a3464731)
 
-<img src="./tips/cascade_notation.png" width=600 alt="Screenshot">
+```dart
+class Person {
+  String name;
+  int age;
+  Person(this.name, this.age);
+  void data() => print("$name is $age years old.");
+}
+
+void main() {
+   // Without Cascade Notation
+   Person person = Person("Richard", 50);
+   person.data();
+   person.age = 22;
+   person.data();
+   person.name += " Parker";
+   person.data();
+   
+   // Cascade Notation with Object of Person
+   Person("Jian", 21)
+    ..data()
+    ..age = 22
+    ..data()
+    ..name += " Yang"
+    ..data();
+    
+   // Cascade Notation with List
+   List<String>()
+    ..addAll(["Natasha", "Steve", "Peter", "Tony"])
+    ..sort()
+    ..forEach((name) => print("\n$name"));
+}
+```
 
 ### 7. Want to set different Theme for a perticular widget ?
 
 Just wrap the widget with the `Theme` Widget and pass the `ThemeData()`.
 
-<img src="./tips/ThemeWidgetExample.png" height="550" alt="Screenshot"/>
+```dart
+Theme(
+  data: ThemeData(...),
+  child: TextFormField(
+    decoration: const InputDecoration(
+      icon: Icon(Icons.person),
+      hintText: 'What do people call you?',
+      labelText: 'Name *',
+    ),
+    onSaved: (String value) {
+      // This optional block of code can be used to run
+      // code when the user saves the form.
+    },
+    validator: (String value) {
+      return value.contains('@')
+        ? 'Do not use the @ char'
+        : null;
+    }
+  ),
+)
+```
 
 ## Monthly Tip Article (February 2019)
 
@@ -131,18 +198,40 @@ This article contains the Tips from February month that shared over here.
 
 Use below.
 
-<img src="./tips/ternary.png" height="250" alt="Screenshot"/>
+```dart
+void main() {
+  bool isAndroid = true;
+  getDeviceType() => isAndroid ? "Android" : "Other";
+  print("Device Type: " + getDeviceType());
+}
+```
 
 Instead of this.
 
-<img src="./tips/if_else.png" height="250" alt="Screenshot"/>
+```dart
+void main() {
+  bool isAndroid;
+  getDeviceType() {
+    if (isAndroid) {
+      return "Android";
+    } else {
+      return "Other";
+    }
+  }
+  print("Device Type: " + getDeviceType());
+}
+```
 
 ### 5. Want to run task periodically in Dart?
 
 What about using `Timer.periodic`
 It will create a repeating timer, It will take a two argument one is `duration` and second is `callback` that must take a one Timer parameter.
 
-<img src="./tips/timer.png" height="250" alt="Screenshot"/>
+```dart
+Timer.periodic(const Duration(seconds: 2), (Timer time) {
+  print("Flutter");
+});
+```
 
 You can cancle the timer using the `timer.cancel()`.
 
@@ -150,7 +239,12 @@ You can cancle the timer using the `timer.cancel()`.
 Check out below article for detail information about this tip.
 [Apply style as a Theme in a `Text` widget](https://medium.com/flutter-community/flutter-apply-style-as-a-theme-in-a-text-widget-90268328bd23)
 
-<img src="./tips/text_theme.png" height="250" alt="Screenshot"/>
+```dart
+Text(
+  "Your Text",
+  style: Theme.of(context).textTheme.title,
+),
+```
 
 ## Monthly Tip Article (January 2019)
 
@@ -163,7 +257,13 @@ This article contains the Tips from January month that shared over here.
 
 Adding `= null` is redundant and unneeded.
 
-<img src="./tips/avoid_init_null.png" height="250" alt="Screenshot"/>
+```dart
+// Good
+var title;
+
+// Bad
+var title = null;
+```
 
 ### 2. Using `ListView.separated()`
 Want to add the separator in your Flutter ListView?
@@ -175,9 +275,31 @@ Best part about seprated is it can be any widget.😃
 
 Check out the below image for the sample code.
 
-<img src="./tips/ListViewSeprated.png" height="250" alt="Screenshot"/>
+```dart
+ListView.seperated(
+  seperatorBuilder: (context, index) => Divider(),
+  itemBuilder: (BuildContext context, int index) => new ExampleNameItem(
+    exampleNames: names[index],
+  ),
+  itemCount: names.length,
+  padding: new EdgeInsets.symetric(
+    vertical: 8.0,
+    horizontal: 8.0,
+  ),
+);
+```
 
 ### 1. Using `null-aware operators`
 While checking the null in the Dart, Use `null-aware operators` help you reduce the amount of code required to work with references that are potentially null.
 
-<img src="./tips/DartTip_14-1-2019.png" height="250" width="250" alt="Screenshot"/>
+```dart
+// User below
+
+title ??= "Title";
+
+// instead of
+
+if (title == null) {
+  title = "Title";
+}
+```

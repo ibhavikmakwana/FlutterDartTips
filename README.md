@@ -1,3 +1,15 @@
+### 15. Check if release mode or not
+You can use `kReleaseMode` constant to check if the code is running in release mode or not.
+`kReleaseMode` is a top level constant from `foundation.dart`. 
+
+More specifically, this is a constant that is true if the application was compiled in Dart with the '-Ddart.vm.product=true' flag. (from https://api.flutter.dev/flutter/foundation/kReleaseMode-constant.html)
+
+```Dart
+import 'package:flutter/foundation.dart';
+
+print('Is Release Mode: $kReleaseMode');
+```
+
 ### 14. Set background image to your Container.
 
 Want to set the background image to your Container? And you are using a Stack to do so?
@@ -24,7 +36,6 @@ Container(
 ```
 
 You can provide Image according to your need, also you can use the box decoration properties to provide a shape and border.
-
 
 ### 13. Prefer single quotes for strings
 Use double quotes for nested strings or (optionally) for strings that contain single quotes. For all other strings, use single quotes.

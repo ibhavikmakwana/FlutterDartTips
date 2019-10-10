@@ -4,7 +4,7 @@ You can use `kReleaseMode` constant to check if the code is running in release m
 
 More specifically, this is a constant that is true if the application was compiled in Dart with the '-Ddart.vm.product=true' flag. (from https://api.flutter.dev/flutter/foundation/kReleaseMode-constant.html)
 
-```Dart
+```dart
 import 'package:flutter/foundation.dart';
 
 print('Is Release Mode: $kReleaseMode');
@@ -16,7 +16,7 @@ Want to set the background image to your Container? And you are using a Stack to
 There is a better way achieve this result.
 You can use decoration to set the image in the container.
 
-```Dart
+```dart
 Container(
   width: double.maxFinite,
   height: double.maxFinite,
@@ -40,7 +40,7 @@ You can provide Image according to your need, also you can use the box decoratio
 ### 13. Prefer single quotes for strings
 Use double quotes for nested strings or (optionally) for strings that contain single quotes. For all other strings, use single quotes.
 
-```Dart
+```dart
 final String name = 'Flutter And Dart Tips';
 
 print('Hello ${name.split(" ")[0]}');
@@ -53,7 +53,7 @@ print('Hello ${name.split(" ")[2]}');
 Do you know that you can throw your own message when your `assert` fails?
 `assert()` takes an optional message in which you can pass your message.
 
-```Dart
+```dart
 assert(title != null, "Title string cannot be null.");
 ```
 
@@ -65,7 +65,7 @@ You can use Plurals in your Dart string by using [`Intl`](https://pub.dev/packag
 
 - Add dependency:
 
-```Dart
+```yaml
 dependencies:
   intl: version
 ```

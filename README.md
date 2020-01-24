@@ -1,3 +1,18 @@
+##### Table of Contents  
+- [Articles](#articles)
+- [Tips](#tips)
+
+# Articles
+- [#1 Flutter + Dart Tips](https://medium.com/flutter-community/1-flutter-dart-tips-830854c3a418)
+- [#2 Flutter + Dart Tips](https://medium.com/flutter-community/2-flutter-dart-tips-f149ffe83381)
+- [#3 Flutter + Dart Tips](https://medium.com/flutter-community/3-flutter-dart-tips-18cc8502f451)
+- [#4 Flutter + Dart Tips](https://medium.com/flutter-community/4-flutter-dart-tips-d1c44faa9c05)
+- [#5 Flutter + Dart Tips](https://medium.com/flutter-community/5-flutter-dart-tips-6e554f34cddd)
+
+
+
+# Tips
+
 ### 15. Check if release mode or not
 You can use `kReleaseMode` constant to check if the code is running in release mode or not.
 `kReleaseMode` is a top level constant from `foundation.dart`. 
@@ -199,12 +214,6 @@ Theme(
 )
 ```
 
-## Monthly Tip Article (February 2019)
-
-This article contains the Tips from February month that shared over here.
-
-[#2 Flutter + Dart Tips](https://medium.com/flutter-community/2-flutter-dart-tips-f149ffe83381)
-
 ### 6. Use Ternary operator instead of the if else to shorter your Dart code.
 
 Use below.
@@ -256,13 +265,6 @@ Text(
   style: Theme.of(context).textTheme.title,
 ),
 ```
-
-## Monthly Tip Article (January 2019)
-
-This article contains the Tips from January month that shared over here.
-
-[#1 Flutter + Dart Tips](https://medium.com/flutter-community/1-flutter-dart-tips-830854c3a418)
-
 
 ### 3. Do not explicitly initialize variables to `null`.
 

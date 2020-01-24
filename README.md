@@ -13,9 +13,26 @@
 
 # Tips
 
+### 16. Apply `HitTestBehavior.opaque` on GestureDetector to make the entire size of the gesture detector a hit region
+If your GestureDetector isn't picking up gestures in a transparent/translucent widget, make sure to set its behavior to `HitTestBehavior.opaque` so it'll capture those events.
+```dart
+GestureDetector(
+  behavior: HitTestBehavior.opaque,
+  onTap: ()=>print('Tap!'),
+  child: Container(
+  height: 250,
+  width: 250,
+  child: Center(child: Text('Gesture Test')),
+ ),
+),
+```
+`Opaque` targets can be hit by hit tests, causing them to both receive events within their bounds and prevent targets visually behind them from also receiving events.
+
+Original source: [Twitter](https://twitter.com/mjohnsullivan/status/1219685756739805187?s=19)
+
 ### 15. Check if release mode or not
 You can use `kReleaseMode` constant to check if the code is running in release mode or not.
-`kReleaseMode` is a top level constant from `foundation.dart`. 
+`kReleaseMode` is a top-level constant from `foundation.dart`. 
 
 More specifically, this is a constant that is true if the application was compiled in Dart with the '-Ddart.vm.product=true' flag. (from https://api.flutter.dev/flutter/foundation/kReleaseMode-constant.html)
 
@@ -28,7 +45,7 @@ print('Is Release Mode: $kReleaseMode');
 ### 14. Set background image to your Container.
 
 Want to set the background image to your Container? And you are using a Stack to do so?
-There is a better way achieve this result.
+There is a better way to achieve this result.
 You can use decoration to set the image in the container.
 
 ```dart
@@ -50,7 +67,7 @@ Container(
 
 ```
 
-You can provide Image according to your need, also you can use the box decoration properties to provide a shape and border.
+You can provide Image according to your need, also you can use the box decoration properties to provide shape and border.
 
 ### 13. Prefer single quotes for strings
 Use double quotes for nested strings or (optionally) for strings that contain single quotes. For all other strings, use single quotes.
@@ -65,7 +82,7 @@ print('Hello ${name.split(" ")[2]}');
 
 ### 12. Implement `assert()` messages in Dart.
 
-Do you know that you can throw your own message when your `assert` fails?
+Do you know that you can throw your message when your `assert` fails?
 `assert()` takes an optional message in which you can pass your message.
 
 ```dart
@@ -109,7 +126,7 @@ notificationCount(int howMany) => Intl.plural(
 
 - Output:
 
-```Outout
+```Output
 You don't have any notification.
 You have 1 notification.
 There are 2 notifications.
@@ -146,12 +163,12 @@ You can use the `print()` function to view it in the system console.
 If your output is too much, then Android sometimes discards some log lines.
 To avoid this, you can use `debugPrint()`.
 
-You can also log your print calls to disk if your doing long-term or background work.
+You can also log your print calls to disk if you're doing long-term or background work.
 
 Check out this [Gist](https://gist.github.com/slightfoot/1770dec7967def3b4d021bba8d814817) by [Simon Lightfoot](https://github.com/slightfoot)
 
 ### 8. Cascade Notation - Method Chaining on Steroids :pill::syringe:
-`Cascades Notation (..)` allows to chain a sequence of operations on same object. In addition, fields (data-memebers) can be accessed using the same.
+`Cascades Notation (..)` allows chaining a sequence of operations on the same object. Besides, fields (data-members) can be accessed using the same.
 
 [Open in DartPad :dart:](https://dartpad.dartlang.org/a93316aa779a2e0dd1993ae9a3464731)
 
@@ -188,7 +205,7 @@ void main() {
 }
 ```
 
-### 7. Want to set different Theme for a perticular widget ?
+### 7. Want to set different Theme for a particular widget?
 
 Just wrap the widget with the `Theme` Widget and pass the `ThemeData()`.
 
@@ -214,7 +231,7 @@ Theme(
 )
 ```
 
-### 6. Use Ternary operator instead of the if else to shorter your Dart code.
+### 6. Use a Ternary operator instead of the if-else to shorter your Dart code.
 
 Use below.
 
@@ -242,10 +259,10 @@ void main() {
 }
 ```
 
-### 5. Want to run task periodically in Dart?
+### 5. Want to run a task periodically in Dart?
 
 What about using `Timer.periodic`
-It will create a repeating timer, It will take a two argument one is `duration` and second is `callback` that must take a one Timer parameter.
+It will create a repeating timer, It will take a two-argument one is `duration` and the second is `callback` that must take a one Timer parameter.
 
 ```dart
 Timer.periodic(const Duration(seconds: 2), (Timer time) {
@@ -253,10 +270,10 @@ Timer.periodic(const Duration(seconds: 2), (Timer time) {
 });
 ```
 
-You can cancle the timer using the `timer.cancel()`.
+You can cancel the timer using the `timer.cancel()`.
 
 ### 4. Apply style as a Theme in a `Text` widget.
-Check out below article for detail information about this tip.
+Check out the below article for detail information about this tip.
 [Apply style as a Theme in a `Text` widget](https://medium.com/flutter-community/flutter-apply-style-as-a-theme-in-a-text-widget-90268328bd23)
 
 ```dart
@@ -284,7 +301,7 @@ Want to add the separator in your Flutter ListView?
 Go for the
 `ListView.separated();`
 
-Best part about seprated is it can be any widget.😃
+The best part about separated is it can be any widget.😃
 
 Check out the below image for the sample code.
 

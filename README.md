@@ -13,7 +13,7 @@
 
 # Tips
 
-### 17. Using `??=` to conditionally assign value to the object if that is null.
+### 17. Using `??=` to assign value to the object if it is null.
 Use `??=` when you want to assign a value to an object if that object is null. Otherwise, return the object.
 ```dart
 someObj ??= value;

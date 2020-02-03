@@ -13,6 +13,12 @@
 
 # Tips
 
+### 17. Using `??=` to conditionally assign value to the object if that is null.
+Use `??=` when you want to assign a value to an object if that object is null. Otherwise, return the object.
+```dart
+someObj ??= value;
+```
+
 ### 16. Apply `HitTestBehavior.opaque` on GestureDetector to make the entire size of the gesture detector a hit region
 If your GestureDetector isn't picking up gestures in a transparent/translucent widget, make sure to set its behavior to `HitTestBehavior.opaque` so it'll capture those events.
 ```dart
